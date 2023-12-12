@@ -30,18 +30,23 @@
         </nav>
     </header>
 
+    <a href="artigos.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="voltar">Voltar</a>
 
     <div class="artigo">
+        <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
         <h2>Adrenalina</h2>
         <div>
-            <img src="./src/imagens/Icones/clock-regular 1.svg" alt="">
+            <img src="./src/imagens/Icones/clock-regular 1.svg" alt="relogio">
             <p>Publicado em 1 de dezembro de 2023</p>
         </div>
     </div>
     <article>
         <div style="margin: 50px;">
             <img class="foto-representativa-article"
-                src="./src/imagens/hormonios/Adrenalina/adrenalina-foto-representatica.jpg" alt="">
+                src="./src/imagens/hormonios/Adrenalina/adrenalina-foto-representatica.jpg" alt="foto de pessoa correndo">
         </div>
 
 
@@ -150,6 +155,19 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+    <script src="./js/main.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
 </body>
 
 </html>

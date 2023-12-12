@@ -30,8 +30,13 @@
         </nav>
     </header>
 
+    <a href="artigos.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="voltar">Voltar</a>
 
     <div class="artigo">
+                <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
         <h2>Cortisol</h2>
         <div>
             <img src="./src/imagens/Icones/clock-regular 1.svg" alt="">
@@ -115,6 +120,20 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+
+        <!-- Acessibilidade VLibras gov -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

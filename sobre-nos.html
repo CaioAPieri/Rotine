@@ -1,158 +1,218 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 
 <head>
-  <meta charset="UTF-8">
-  <link rel="stylesheet" type="text/css" href="./css/style.css">
-  <link rel="stylesheet" type="text/css" href="./team-styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap" rel="stylesheet">
-  <link rel="icon" type="image/png" href="icon.png">
-  <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
-  <title>Sobre Nós</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos</title>
+    <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <header>
-    <nav id="topbar">
-      <div id="logo">
-        <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
-      </div>
+    <header>
+        <nav id="topbar">
+            <div id="logo">
+                <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
+            </div>
 
-      <div id="navbar-items">
-        <ul id="navbar-sections">
-          <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
-          <li class="navbar-sobre-nos" style="color: #00A789;"><a href="sobre-nos.html">Sobre Nós</a></li>
-          <li class="navbar-artigos ativo"><a href="artigos.html">Artigos</a></li>
-        </ul>
+            <div id="navbar-items">
+                <ul id="navbar-sections">
+                    <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-sobre-nos" style="color: #00A789"><a href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="navbar-artigos"><a href="artigos.html">Artigos</a></li>
+                </ul>
 
-        <div id="btn-login-signup">
-          <a href="#" class="login">Entrar</a>
-          <a href="#" class="signup">Cadastrar</a>
+                <div id="btn-login-signup">
+                    <a href="#" class="login">Entrar</a>
+                    <a href="#" class="signup">Cadastrar</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <section class="sobre-nos">
+        <h2>Conheça os criadores:</h2>
+        <div class="cards">
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img src="./assets/Caio.jpg" alt=""></div>
+                    <div class="card-title">Caio Pieri</div>
+                    <div class="card-subtitle">DEV fullstack &amp; Gerente</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://github.com/CAPIERI"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                                width="15.5"
+                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></a>
+                    </li>
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/_caio.ap_/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.linkedin.com/in/caio-amaral-de-pieri-654736247/"><svg viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
+                                </path>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img src="./assets/Igor.png" alt=""></div>
+                    <div class="card-title">Igor Casita</div>
+                    <div class="card-subtitle">DEV fullstack &amp; Supervisor</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://github.com/igorfcfs"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                                width="15.5"
+                                viewBox="0 0 496 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3 .3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5 .3-6.2 2.3zm44.2-1.7c-2.9 .7-4.9 2.6-4.6 4.9 .3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3 .7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3 .3 2.9 2.3 3.9 1.6 1 3.6 .7 4.3-.7 .7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3 .7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3 .7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z" />
+                            </svg></a>
+                    </li>
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/igorcasita/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.linkedin.com/in/igor-fernando-silva-496076216/"><svg viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19.547 3c.406 0 .75.133 1.031.398.281.266.422.602.422 1.008v15.047c0 .406-.14.766-.422 1.078a1.335 1.335 0 0 1-1.031.469h-15c-.406 0-.766-.156-1.078-.469C3.156 20.22 3 19.86 3 19.453V4.406c0-.406.148-.742.445-1.008C3.742 3.133 4.11 3 4.547 3h15zM8.578 18V9.984H6V18h2.578zM7.36 8.766c.407 0 .743-.133 1.008-.399a1.31 1.31 0 0 0 .399-.96c0-.407-.125-.743-.375-1.009C8.14 6.133 7.813 6 7.406 6c-.406 0-.742.133-1.008.398C6.133 6.664 6 7 6 7.406c0 .375.125.696.375.961.25.266.578.399.984.399zM18 18v-4.688c0-1.156-.273-2.03-.82-2.624-.547-.594-1.258-.891-2.133-.891-.938 0-1.719.437-2.344 1.312V9.984h-2.578V18h2.578v-4.547c0-.312.031-.531.094-.656.25-.625.687-.938 1.312-.938.875 0 1.313.578 1.313 1.735V18H18z">
+                                </path>
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img style="position: relative; top: -30px;" src="./assets/Leo.jpeg" alt=""></div>
+                    <div class="card-title">Leonardo Jorge</div>
+                    <div class="card-subtitle">Full Designer</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/leogj_0/"><svg xmlns="http://www.w3.org/2000/svg" height="16"
+                                width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img src="./assets/Isa.jpeg" alt=""></div>
+                    <div class="card-title">Isabella Sartore</div>
+                    <div class="card-subtitle">Pesquisa &amp; Designer</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/bellasartore/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img style="position: relative; top: -60px;" src="./assets/Caua.png" alt=""></div>
+                    <div class="card-title">Cauã Martos</div>
+                    <div class="card-subtitle">Pesquisa</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/caua.martos/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
+            <div class="card">
+                <div class="card-info">
+                    <div class="card-avatar"><img style="position: relative; top: -60px;" src="./assets/Carlos.jpeg" alt=""></div>
+                    <div class="card-title">Carlos Andrade</div>
+                    <div class="card-subtitle">Pesquisa</div>
+                </div>
+                <ul class="card-social">
+                    <li class="card-social__item">
+                        <a target="_blank" href="https://www.instagram.com/carlos_august0jr/"><svg xmlns="http://www.w3.org/2000/svg"
+                                height="16" width="14"
+                                viewBox="0 0 448 512"><!--!Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2023 Fonticons, Inc.-->
+                                <path
+                                    d="M224.1 141c-63.6 0-114.9 51.3-114.9 114.9s51.3 114.9 114.9 114.9S339 319.5 339 255.9 287.7 141 224.1 141zm0 189.6c-41.1 0-74.7-33.5-74.7-74.7s33.5-74.7 74.7-74.7 74.7 33.5 74.7 74.7-33.6 74.7-74.7 74.7zm146.4-194.3c0 14.9-12 26.8-26.8 26.8-14.9 0-26.8-12-26.8-26.8s12-26.8 26.8-26.8 26.8 12 26.8 26.8zm76.1 27.2c-1.7-35.9-9.9-67.7-36.2-93.9-26.2-26.2-58-34.4-93.9-36.2-37-2.1-147.9-2.1-184.9 0-35.8 1.7-67.6 9.9-93.9 36.1s-34.4 58-36.2 93.9c-2.1 37-2.1 147.9 0 184.9 1.7 35.9 9.9 67.7 36.2 93.9s58 34.4 93.9 36.2c37 2.1 147.9 2.1 184.9 0 35.9-1.7 67.7-9.9 93.9-36.2 26.2-26.2 34.4-58 36.2-93.9 2.1-37 2.1-147.8 0-184.8zM398.8 388c-7.8 19.6-22.9 34.7-42.6 42.6-29.5 11.7-99.5 9-132.1 9s-102.7 2.6-132.1-9c-19.6-7.8-34.7-22.9-42.6-42.6-11.7-29.5-9-99.5-9-132.1s-2.6-102.7 9-132.1c7.8-19.6 22.9-34.7 42.6-42.6 29.5-11.7 99.5-9 132.1-9s102.7-2.6 132.1 9c19.6 7.8 34.7 22.9 42.6 42.6 11.7 29.5 9 99.5 9 132.1s2.7 102.7-9 132.1z" />
+                            </svg></a>
+                    </li>
+                </ul>
+            </div>
         </div>
-      </div>
-    </nav>
-  </header>
+    </section>
 
-  <!-- Mensagem no topo da tela -->
-  <div class="mensagem" id="mensagem"></div>
-  <div class="content">
-    <!-- ... Seu código HTML existente ... -->
-  </div>
 
-  <div class="content">
-    <h1>Conheça os Criadores</h1>
-    <br>
-    <div class="box">
-      <div class="row">
+    <footer>
+        <div id="logo-sections">
+            <img src="./src/logo/logo.svg" alt="">
+            <div id="footer-sections">
+                <a href="#">Artigos</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Atualizações</a>
+                <a href="#">Entre em contato</a>
+                <a href="#">Seja um patrocinador</a>
+                <a href="#">Instale nosso aplicativo</a>
+            </div>
+        </div>
+        <select name="idioma" id="idiomas">
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <div id="termos">
+            <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+        </div>
+    </footer>
 
-        <!-- Caio Pieri -->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Caio.jpg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Caio Amaral de Pieri</h2>
-              <p class="title">Desenvolvedor</p>
-              <a href="https://www.instagram.com/_caio.ap_/" target="_blank">Visite meu Instagram</a>
-              <p><a href="caio.html" class="button">Saiba Mais</a></p>
+        <!-- Acessibilidade VLibras gov -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
             </div>
           </div>
-        </div>
-
-        <!-- Carlos Andrade -->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Carlos.jpeg" alt="Mike" style="width:100%">
-            <div class="container">
-              <h2>Carlos Andrade</h2>
-              <p class="title">Pesquisa</p>
-              <a href="https://www.instagram.com/carlos_august0jr/">Visite meu Instagram</a>
-              <p><a href="carlos.html" class="button">Saiba Mais</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!--Cauã Alonso-->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Caua.png" alt="John" style="width:100%">
-            <div class="container">
-              <h2>Cauã Alonso</h2>
-              <p class="title">Pesquisa</p>
-              <a href="https://www.instagram.com/caua.martos/">Visite meu Instagram</a>
-              <p><a href="caua.html" class="button">Saiba Mais</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!--Igor Fernando-->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Igor.png" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Igor Fernando</h2>
-              <p class="title">Desenvolvedor</p>
-              <a href="https://www.instagram.com/igorcasita/">Visite meu Instagram</a>
-              <p><a href="igor.html" class="button">Saiba Mais</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!--Isa-->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Isa.jpeg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Isabella Sartore</h2>
-              <p class="title">Pesquisa</p>
-              <a href="https://www.instagram.com/bellasartore">Visite meu Instagram</a>
-              <p><a href="isa.html" class="button">Saiba Mais</a></p>
-            </div>
-          </div>
-        </div>
-
-        <!--Leo-->
-        <div class="column">
-          <div class="card">
-            <img src="./assets/Leo.jpeg" alt="Jane" style="width:100%">
-            <div class="container">
-              <h2>Leonardo Gonçalves</h2>
-              <p class="title">Designer</p>
-              <a
-                href="https://www.instagram.com/rxy_ryoga/?utm_source=ig_web_button_share_sheet&igshid=OGQ5ZDc2ODk2ZA==">Visite
-                meu Instagram</a>
-              <p><a href="leo.html" class="button">Saiba Mais</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- Rodapé -->
-  <footer>
-    <div id="logo-sections">
-      <img src="/src/logo/logo.svg" alt="">
-      <div id="footer-sections">
-        <a href="#">Artigos</a>
-        <a href="#">Sobre nós</a>
-        <a href="#">Atualizações</a>
-        <a href="#">Entre em contato</a>
-        <a href="#">Seja um patrocinador</a>
-        <a href="#">Instale nosso aplicativo</a>
-      </div>
-    </div>
-    <select name="idioma" id="idiomas">
-      <option value="pt-br">Português</option>
-      <option value="en">Inglês</option>
-      <option value="es">Espanhol</option>
-      <option value="fr">Francês</option>
-    </select>
-    <div id="termos">
-      <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
-    </div>
-  </footer>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
 
 </body>
+
+<!-- swiper JS  -->
+<script src="/js/swiper-bundle.min.js"></script>
+
+<!-- JavaScript -->
+<script src="./js/main.js"></script>
 
 </html>

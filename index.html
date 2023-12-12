@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,20 @@
     <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
     <header>
         <nav id="topbar">
             <div id="logo">
                 <a href="#"><img src="./src/logo/logoRotine.svg"></a>
             </div>
-            
+
             <div id="navbar-items">
                 <ul id="navbar-sections">
                     <li class="navbar-inicio" style="color: #00A789;"><a href="index.html">Inicio</a></li>
                     <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
                     <li class="navbar-artigos"><a href="artigos.html">Artigos</a></li>
-                </ul> 
+                </ul>
 
                 <div id="btn-login-signup">
                     <a href="#" class="login">Entrar</a>
@@ -28,8 +30,8 @@
             </div>
         </nav>
     </header>
-    
-    <section class="landing-page">          
+
+    <section class="landing-page">
         <div class="apresentation">
             <div class="container-1">
                 <h2 class="title">
@@ -38,24 +40,17 @@
                 <p class="subtitle">
                     Crie rotinas. Tenha tudo que precisa para uma vida saudável em um lugar…
                 </p>
-                
+
                 <a class="btn-start">
                     Começar
                     <div class="icon">
-                      <svg
-                        height="24"
-                        width="24"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path
-                          d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
-                          fill="currentColor"
-                        ></path>
-                      </svg>
+                        <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M0 0h24v24H0z" fill="none"></path>
+                            <path d="M16.172 11l-5.364-5.364 1.414-1.414L20 12l-7.778 7.778-1.414-1.414L16.172 13H4v-2z"
+                                fill="currentColor"></path>
+                        </svg>
                     </div>
-                
+
                 </a>
             </div>
             <div class="container-2">
@@ -92,7 +87,8 @@
                 </div>
                 <div class="container-4">
                     <h4>Artigos</h4>
-                    <p>Nossas recomendações são baseado em artigos científicos, para trazer informação confiável e de qualidade!</p>
+                    <p>Nossas recomendações são baseado em artigos científicos, para trazer informação confiável e de
+                        qualidade!</p>
                     <div class="saiba-mais">
                         <a href="#" class="saiba-mais">Saiba mais</a>
                     </div>
@@ -104,7 +100,8 @@
         <div id="artigo-destaque">
             <div id="text-article">
                 <h3>Nutricionismo e Culinária</h3>
-                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim do próprio corpo. <a href="#">Saiba Mais+</a></p>
+                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
+                    do próprio corpo. <a href="#">Saiba Mais+</a></p>
                 <span>Destaques</span>
                 <p class="data-article">Dez 1, 2023</p>
             </div>
@@ -119,24 +116,37 @@
         <div id="logo-sections">
             <img src="./src/logo/logoRotine.svg" alt="">
             <div id="footer-sections">
-                <a href="#">Artigos</a> 
-                <a href="#">Sobre nós</a> 
-                <a href="#">Atualizações</a> 
-                <a href="#">Entre em contato</a> 
-                <a href="#">Seja um patrocinador</a> 
+                <a href="#">Artigos</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Atualizações</a>
+                <a href="#">Entre em contato</a>
+                <a href="#">Seja um patrocinador</a>
                 <a href="#">Instale nosso aplicativo</a>
             </div>
         </div>
         <select name="idioma" id="idiomas">
-                <option value="pt-br">Português</option>
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
-                <option value="fr">Francês</option>
-            </select>
-            <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
-        
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+
     </footer>
+
+    <!-- Acessibilidade VLibras gov -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 
     <script type="module" src="/js/main.js"></script>
 </body>
-</html> 
+
+</html>

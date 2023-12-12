@@ -31,9 +31,13 @@
         </nav>
     </header>
 
-    <a href="index.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="">Voltar</a>
-
+    <a href="artigos.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="voltar">Voltar</a>
+    
     <div class="artigo">
+        <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
         <h2>Atividade Física e Qualidade de Vida</h2>
         <div>
             <img src="./src/imagens/Icones/clock-regular 1.svg" alt="">
@@ -43,7 +47,6 @@
 
     <article>
         <div>
-            <p></p>
             <p>Você sabia que a atividade física é um importante fator para a promoção da saúde e qualidade de vida?
                 <br> <br>Pois é, diversos estudos têm demonstrado que a prática regular de exercícios físicos pode
                 prevenir doenças crônicas, melhorar a saúde mental e cognitiva, além de aumentar a longevidade. <br><br>
@@ -54,8 +57,9 @@
                 sua qualidade de vida, incluindo aspectos psicológicos e cognitivos. Os professores apresentaram maior
                 pontuação na escala de qualidade de vida em comparação aos funcionários e estudantes. Além disso, os
                 participantes que praticavam atividades físicas regularmente apresentaram melhor desempenho em aspectos
-                como satisfação com a vida, bem-estar emocional e social, e saúde mental.</p>
-            <a href="https://www.scielo.br/j/csc/a/tz8z48sFy9Nv7vsPQtcfBzj/?format=pdf&lang=pt"><img
+                como satisfação com a vida, bem-estar emocional e social, e saúde mental.
+            </p>
+            <a href="https://www.scielo.br/j/csc/a/tz8z48sFy9Nv7vsPQtcfBzj/?format=pdf&lang=pt" target="_blank"><img
                     src="./src/imagens/Imagens/ARTIGO-ATIVIDADE-FÍSIC11A 1.png" alt=""></a>
         </div>
         <h4>Confira abaixo alguns dos principais benefícios da atividade física:</h4>
@@ -76,6 +80,20 @@
             <br><b>Aumento da energia e disposição:</b> a atividade física pode aumentar a energia e disposição,
             melhorando a qualidade de vida e a produtividade no trabalho e estudos.
         </p>
+        <br><br>
+
+        <h4>Entrevista com profissional do esporte:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/dM34iYlSlsU?si=ptY7HJ9ZOVen6VL2"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+        <br>
+        <h4>Entrevista com profissional da psicologia e seu ponto de vista em relação ao esporte:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/lq0xhLwXAc0?si=_zeLDPobq8DRwSIf"
+            title="YouTube video player" frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen></iframe>
+
     </article>
 
     <footer>
@@ -100,6 +118,19 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+    <!-- Acessibilidade VLibras gov -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

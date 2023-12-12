@@ -1,189 +1,252 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Artigos</title>
-        <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
-        <link rel="stylesheet" href="./css/style.css">
-        <!-- Swipper Css -->
-        <link rel="stylesheet" href="./css/swiper-bundle.min.css">
-    </head>
-    
-    <body>
-        <header>
-            <nav id="topbar">
-                <div id="logo">
-                    <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Artigos</title>
+    <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>    
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="logo">
+                <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
+            </div>
+
+            <div id="navbar-items">
+                <ul id="navbar-sections">
+                    <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
+                    <li class="navbar-artigos" style="color: #00A789"><a href="artigos.html">Artigos</a></li>
+                </ul>
+
+                <div id="btn-login-signup">
+                    <a href="#" class="login">Entrar</a>
+                    <a href="#" class="signup">Cadastrar</a>
                 </div>
-                
-                <div id="navbar-items">
-                    <ul id="navbar-sections">
-                        <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
-                        <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
-                        <li class="navbar-artigos" style="color: #00A789"><a href="artigos.html">Artigos</a></li>
-                    </ul> 
+            </div>
+        </nav>
+    </header>
 
-                    <div id="btn-login-signup">
-                        <a href="#" class="login">Entrar</a>
-                        <a href="#" class="signup">Cadastrar</a>
-                    </div>
-                </div>
-            </nav>
-        </header>
-
-        <section id="section-artigos">
-            <h2>Artigos</h2>
-            <nav class="tipos-artigos">
-                <a href="artigos.html" class="todos-artigos fundo_ativo">Todos</a>
-                <a href="pesquisas.html" class="nutrição-artigos">Pesquisas</a>
-                <a href="arquivos.html" class="diversos-artigos">Arquivos</a>
-            </nav>
-
-            <div id="lista-artigos">
-                <!-- Cards -->
-                <div id="atividade-fisica-e-qualidade-de-vida">
-                    <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo1.png" alt="">
-                        <h3>Atividade Física e Qualidade de Vida</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo exercicio</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
+    <section id="section-artigos">
+        <h2>Artigos</h2>
+        <nav class="tipos-artigos">
+            <a href="artigos.html" class="todos-artigos fundo_ativo">Todos</a>
+        </nav>
+        <section class="cards-artigos">
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="atividade-fisica-e-qualidade-de-vida.html"><img src="./src/artigos/atividade-fisica-e-qualidade-de-vida/ImagemArtigo1.png" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Atividade Física e Qualidade de Vida</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Exercicio</div>
+                            <div class="data-artigo">Dez 10, 2023</div>               
                         </div>
                         <a href="atividade-fisica-e-qualidade-de-vida.html" class="saiba-mais">Saiba Mais</a>
                     </div>
                 </div>
-                <div id="nutricionismo-e-culinaria">
-                    <a href="nutricionismo-e-culinaria.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo2.png" alt="">
-                        <h3>Nutricionismo e Culinária</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo Nutrição</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="nutricionismo-e-culinaria.html"><img src="./src/artigos/nutricionismo-e-culinaria/ImagemArtigo2.png" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Nutricionismo e Culinária</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Nutrição</div>
+                            <div class="data-artigo">Dez 10, 2023</div>               
                         </div>
                         <a href="nutricionismo-e-culinaria.html" class="saiba-mais">Saiba Mais</a>
                     </div>
                 </div>
-                <div id="barreiras-a-informacao-em-saude">
-                    <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">
-                        <img src="./assets/ImagemArtigo3.png" alt="">
-                        <h3>Barreiras á informação em saúde</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo informação</p>
-                            <p class="data-artigos">Dez 1, 2023</p>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="barreiras-a-informacao-em-saude.html"><img src="./src/artigos/barreiras-a-informacao/imagem-representativa.jpg" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Barreiras á informação em saúde</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Informação</div>
+                            <div class="data-artigo">Dez 1, 2023</div>               
                         </div>
-                        <a href="#" class="saiba-mais">Saiba Mais</a>
-                    </div>
-                </div>
-                <div id="artigo-inclusao">
-                    <a href="https://etecspgov-my.sharepoint.com/:b:/g/personal/igor_silva816_etec_sp_gov_br/Ebvp-RpCqZVMs-SacBK0wE4BeF6smQYuvs7PJ_QkjCsZGw?e=T52n7J" class="saiba-mais">
-                        <img src="./assets/inclusao.png" alt="">
-                        <h3>Inclusão</h3>
-                    </a>
-                    <div class="descricao-artigo">
-                        <div class="descricao-artigo-tema-data">
-                            <p>Artigo informação</p>
-                            <p class="data-artigos">Dez 05, 2023</p>
-                        </div>
-                        <a href="#" class="saiba-mais">Saiba Mais</a>
+                        <a href="barreiras-a-informacao-em-saude.html" class="saiba-mais">Saiba Mais</a>
                     </div>
                 </div>
             </div>
-            <div id="artigo-destaque">
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="poluicao-atmosferica.html"><img src="./src/artigos/poluicao-atmosferica/poluicao-atmosferica-foto-representativa.jpeg" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Poluição Atmosférica e saúde de crianças</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Saúde</div>
+                            <div class="data-artigo">Dez 1, 2023</div>               
+                        </div>
+                        <a href="poluicao-atmosferica.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="adrenalina.html"><img src="./src/imagens/hormonios/Adrenalina/adrenalina-foto-representatica.jpg" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Adrenalina: O hormônio "lutar ou fugir"</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="adrenalina.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="endorfina.html"><img src="./src/imagens/hormonios/Endorfina/foto-representativa Endorfina.png" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Endorfina: O analgésico natural</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="endorfina.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="seratonina.html"><img src="./src/imagens/hormonios/Seratonina/images.png" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Seratonina: O hormônio da felicidade</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="seratonina.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="dopamina.html"><img src="./src/imagens/hormonios/Dopamina/dopamina.jpg" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Dopamina: O hormônio da recompensa</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="dopamina.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="cortisol.html"><img src="./src/imagens/hormonios/Cortisol/cortisol.jpg" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Cortisol: O hormônio do estresse</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="cortisol.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+            <div class="card-artigo">
+                <div class="imagem-card"><a href="Irisina.html"><img src="./src/imagens/hormonios/Irisina/irisina.png" alt=""></a></div>
+                <div class="conteudo-card">
+                    <div class="title-card">Irisina: O hormônio do exercicio</div>
+                    <div class="descricao-card">
+                        <div class="tipo-data">
+                            <div class="tipo-artigo">Artigo Química/Biologia</div>
+                            <div class="data-artigo">Dez 11, 2023</div>               
+                        </div>
+                        <a href="dopamina.html" class="saiba-mais">Saiba Mais</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+
+        <div id="artigo-destaque">
             <div id="text-article">
-                    <h3>Nutricionismo e Culinária</h3>
-                    <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim do próprio corpo. <a href="#">Saiba Mais+</a></p>
-                    <span>Destaques</span>
-                    <p class="data-article">Dez 1, 2023</p>
-                </div>
-                <div class="imgs-article">
-                    <img id="img-article" src="./src/index/image 3.png" alt="">
-                    <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
-                </div>
+                <h3>Nutricionismo e Culinária</h3>
+                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
+                    do próprio corpo. <a href="nutricionismo-e-culinaria.html">Saiba Mais+</a></p>
+                <span>Destaques</span>
+                <p class="data-article">Dez 1, 2023</p>
             </div>
-        </section>
-
-        <section id="recomendacoes">
-            <h3>Todas as nossas recomendações são</h3>
-            <div>
-                <div>
-                <div><img src="./src/imagens/Icones/image 272.svg" alt=""></div>
-                <span>Escolhidas carinhosamente</span>
-                <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as melhores e mais eficientes recomendações.</p>
-                </div>
-                <div>
-                    <div><img src="./src/imagens/Icones/image 270.svg" alt=""></div>
-                    <span>Pesquisadas</span>
-                    <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor possível.</p>
-                </div>
-                <div>
-                    <div><img src="./src/imagens/Icones/Image 271.svg" alt=""></div>
-                    <span>Comprovadas</span>
-                    <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
-                </div>
-            </div>
-            <a href="sobre-nos.html">Conheça-nos</a>
-        </section>
-
-        <!-- FALTA: -->
-        <!--ARTIGO CIENTIFICO SAMELA-->
-        <!-- INCLUSÂO -->
-        <div class="slider-articles">
-            <div class="slide-content">
-                <div class="card-wrapper">
-                    <div class="card-container">
-                        <div class="image-content">
-                            <span class="overlay"></span>
-                            <div class="card-image">
-                                <img src="./src/artigos/atividade-fisica-e-qualidade-de-vida/ImagemArtigo1.png" alt="" class="card-img">
-                            </div>
-                        </div>
-
-                        <div class="card-content">
-                            <h3 class="name">Nutricionismo e Culinária</h3>
-                            <p class="description">Descrição</p>
-                            <button class="saiba-mais">Saiba Mais</button>
-                        </div>
-                    </div>
-                </div>
+            <div class="imgs-article">
+                <img id="img-article" src="./src/index/image 3.png" alt="">
+                <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
             </div>
         </div>
+    </section>
 
-
-
-        <footer>
-            <div id="logo-sections">
-                <img src="./src/logo/logo.svg" alt="">
-                <div id="footer-sections">
-                    <a href="#">Artigos</a> 
-                    <a href="#">Sobre nós</a> 
-                    <a href="#">Atualizações</a> 
-                    <a href="#">Entre em contato</a> 
-                    <a href="#">Seja um patrocinador</a> 
-                    <a href="#">Instale nosso aplicativo</a>
-                </div>
+    <section id="recomendacoes">
+        <h3>Todas as nossas recomendações são</h3>
+        <div>
+            <div>
+                <div><img src="./src/imagens/Icones/image 272.svg" alt=""></div>
+                <span>Escolhidas carinhosamente</span>
+                <p>Nosso grupo de estudantes e profissionais da área da saúde como um todo, escolhem carinhosamente as
+                    melhores e mais eficientes recomendações.</p>
             </div>
-            <select name="idioma" id="idiomas">
-                <option value="pt-br">Português</option>
-                <option value="en">Inglês</option>
-                <option value="es">Espanhol</option>
-                <option value="fr">Francês</option>
-            </select>
-            <div id="termos">
-                <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+            <div>
+                <div><img src="./src/imagens/Icones/image 270.svg" alt=""></div>
+                <span>Pesquisadas</span>
+                <p>Todos pesquisamos e buscamos o máximo de cada recomendação, para que o seu proveito seja o melhor
+                    possível.</p>
             </div>
-        </footer>
-    </body>
+            <div>
+                <div><img src="./src/imagens/Icones/Image 271.svg" alt=""></div>
+                <span>Comprovadas</span>
+                <p>Ainda para que essas recomendações sejam confiáveis, buscamos sempre a análise de profissionais e
+                    estudos extensos que possam comprovar a real eficiência, trazendo mais confiança para você.</p>
+            </div>
+        </div>
+        <a href="sobre-nos.html">Conheça-nos</a>
+    </section>
 
-    <!-- swiper JS  -->
-    <script src="/js/swiper-bundle.min.js"></script>
+    <footer>
+        <div id="logo-sections">
+            <img src="./src/logo/logo.svg" alt="">
+            <div id="footer-sections">
+                <a href="#">Artigos</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Atualizações</a>
+                <a href="#">Entre em contato</a>
+                <a href="#">Seja um patrocinador</a>
+                <a href="#">Instale nosso aplicativo</a>
+            </div>
+        </div>
+        <select name="idioma" id="idiomas">
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <div id="termos">
+            <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+        </div>
+    </footer>
+    
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+      </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
 
     <!-- JavaScript -->
     <script src="./js/main.js"></script>
+</body>
+
+
 </html>

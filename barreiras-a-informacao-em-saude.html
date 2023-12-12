@@ -34,6 +34,10 @@
     <a href="artigos.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="">Voltar</a>
 
     <div class="artigo">
+        <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
         <h2>Barreiras á informação em saúde</h2>
         <div>
             <img src="./src/imagens/Icones/clock-regular 1.svg" alt="">
@@ -43,12 +47,26 @@
 
     <article>
         <div>
-            <p>Você já parou para pensar nas barreiras que as pessoas enfrentam ao buscar informações sobre saúde nas mídias sociais? Um artigo recente, publicado na Revista Digital de Biblioteconomia e Ciência da Informação, mergulhou nesse tema e revelou descobertas fascinantes.
-            <br>As pesquisas examinadas revelaram que os usuários leigos de informações sobre saúde enfrentam diversas barreiras ao navegar pelas mídias sociais. Estas barreiras incluem a qualidade das informações encontradas, a superexposição a elogios ou reclamações, preocupações com a privacidade e até mesmo o excesso de notificações sem informações relevantes.
-            <br>Os estudos incluídos no artigo foram conduzidos em diferentes contextos e utilizaram uma variedade de abordagens metodológicas, como pesquisas online, entrevistas e análise de conteúdo. Eles revelaram que as barreiras à informação em saúde nas mídias sociais podem ampliar as experiências de vulnerabilidade emocional e desinformação entre os usuários leigos.
-            <br>Compreender as barreiras à informação em saúde nas mídias sociais é crucial, pois isso pode ajudar a promover a autogestão de informações sobre saúde. Ao reconhecer e superar essas barreiras, os usuários leigos podem tomar decisões mais informadas e cuidar melhor de sua saúde.
-            <br>Agora que você conhece um pouco mais sobre as barreiras à informação em saúde nas mídias sociais, que tal refletir sobre como isso impacta sua própria busca por informações de saúde online? Compartilhe este artigo com amigos e familiares para promover uma maior conscientização sobre este importante tema.</p>
-          <a href="https://www.scielo.br/j/rdbci/a/9VNLCSGsW88xgZNmn6yGGLg/?format=pdf&lang=pt"></a><img src="./assets/op-1.png" alt="">
+            <p>Você já parou para pensar nas barreiras que as pessoas enfrentam ao buscar informações sobre saúde nas
+                mídias sociais? Um artigo recente, publicado na Revista Digital de Biblioteconomia e Ciência da
+                Informação, mergulhou nesse tema e revelou descobertas fascinantes.
+                <br>As pesquisas examinadas revelaram que os usuários leigos de informações sobre saúde enfrentam
+                diversas barreiras ao navegar pelas mídias sociais. Estas barreiras incluem a qualidade das informações
+                encontradas, a superexposição a elogios ou reclamações, preocupações com a privacidade e até mesmo o
+                excesso de notificações sem informações relevantes.
+                <br>Os estudos incluídos no artigo foram conduzidos em diferentes contextos e utilizaram uma variedade
+                de abordagens metodológicas, como pesquisas online, entrevistas e análise de conteúdo. Eles revelaram
+                que as barreiras à informação em saúde nas mídias sociais podem ampliar as experiências de
+                vulnerabilidade emocional e desinformação entre os usuários leigos.
+                <br>Compreender as barreiras à informação em saúde nas mídias sociais é crucial, pois isso pode ajudar a
+                promover a autogestão de informações sobre saúde. Ao reconhecer e superar essas barreiras, os usuários
+                leigos podem tomar decisões mais informadas e cuidar melhor de sua saúde.
+                <br>Agora que você conhece um pouco mais sobre as barreiras à informação em saúde nas mídias sociais,
+                que tal refletir sobre como isso impacta sua própria busca por informações de saúde online? Compartilhe
+                este artigo com amigos e familiares para promover uma maior conscientização sobre este importante tema.
+            </p>
+            <a href="https://www.scielo.br/j/rdbci/a/9VNLCSGsW88xgZNmn6yGGLg/?format=pdf&lang=pt" target="_blank"><img
+                    src="./assets/op-1.png" alt=""></a>
     </article>
 
     <footer>
@@ -73,6 +91,19 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+    <!-- Acessibilidade VLibras gov -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>

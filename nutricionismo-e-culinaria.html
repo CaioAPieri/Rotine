@@ -34,6 +34,10 @@
     <a href="artigos.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="">Voltar</a>
 
     <div class="artigo">
+        <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
         <h2>Nutricionismo e Culinária</h2>
         <div>
             <img src="./src/imagens/Icones/clock-regular 1.svg" alt="">
@@ -48,8 +52,13 @@
             <br>Além disso, a alimentação é uma prática social que vai muito além do aspecto biológico, envolvendo aspectos simbólicos, culturais e emocionais. Reconhecer a alimentação como prática social implica considerar seu dinamismo, suas nuances e o impacto disso na organização da vida cotidiana. A comida e a culinária desempenham um papel fundamental na promoção do bem-estar das pessoas, levando em conta não apenas a saúde, mas também o prazer e a qualidade de vida.
             <br> Para transformar recomendações nutricionais em comida, é necessário considerar a alimentação como prática social e lidar com os aspectos que cercam o ato de comer. Entre o ideal e o possível, profissionais de saúde e usuários podem reconhecer os aspectos que favorecem ou prejudicam a prática da alimentação saudável e adequada no cotidiano e construir estratégias para superar os possíveis obstáculos.
             <br>Portanto, a culinária e a alimentação não devem ser encaradas apenas como aspectos biológicos, mas sim como práticas sociais e culturais que influenciam diretamente a saúde e a qualidade de vida. Essa reflexão crítica sobre a culinária como estratégia metodológica de educação alimentar e nutricional é essencial no enfrentamento das doenças crônicas não transmissíveis.</p>
-          <a class="artigo" href="https://www.e-publicacoes.uerj.br/revistahupe/article/view/19950/19546"><img src="./assets/tes-1.png" alt=""></a>
+            <a class="artigo" href="https://www.e-publicacoes.uerj.br/revistahupe/article/view/19950/19546" target="_blank"><img src="./assets/tes-1.png" alt=""></a>
+        </div>
+        <br><br>
+        <h4>Entrevista com profissional da nutrição:</h4>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/Y2owXVF5Rok?si=kUSdCXzh7EdmytRq" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </article>
+
 
     <footer>
         <div id="logo-sections">
@@ -73,6 +82,20 @@
             <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
         </div>
     </footer>
+
+        <!-- Acessibilidade VLibras gov -->
+        <div vw class="enabled">
+            <div vw-access-button class="active"></div>
+            <div vw-plugin-wrapper>
+              <div class="vw-plugin-top-wrapper"></div>
+            </div>
+          </div>
+          <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+          <script>
+            new window.VLibras.Widget('https://vlibras.gov.br/app');
+          </script>
+
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
