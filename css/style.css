@@ -1,10 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700&family=Open+Sans:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap');
-font-family: 'Manrope',
-sans-serif;
-font-family: 'Open Sans',
-sans-serif;
-font-family: 'Poppins',
-sans-serif;
 
 :root {
     --cor-ativo: #00A789;
@@ -27,7 +21,6 @@ body {
     padding: 20px 20px 0px 20px;
     flex-direction: column;
     align-items: center;
-    gap: 70px;
 }
 
 p {
@@ -101,12 +94,13 @@ header {
     justify-content: center;
     align-items: center;
     gap: 20px;
-    padding: 0px 5px;
+    padding: 0px 30px;
 }
 
-/* .navbar-inicio {
-    color: #00A789;
-} */
+color: #00A789;
+}
+
+*/
 
 /* logo */
 #logo {
@@ -136,30 +130,6 @@ header {
     box-shadow: 0px 0px 0px 0px #6CABA0;
 }
 
-/* btn-login-signup */
-
-#btn-login-signup {
-    display: flex;
-    width: auto;
-    height: auto;
-    align-items: center;
-    justify-content: center;
-    padding: 0px 10px;
-    gap: 10px;
-    font-family: 'Open Sans', sans-serif;
-}
-
-#btn-login-signup button {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    outline: none;
-    border: 0;
-    vertical-align: middle;
-    text-decoration: none;
-    font-family: inherit;
-    font-size: inherit;
-}
 
 /* btn-login */
 a.login {
@@ -168,66 +138,6 @@ a.login {
     background: #F0F4FF;
     color: #00A789;
     text-transform: uppercase;
-}
-
-/* btn-signup */
-a.signup {
-    position: relative;
-    top: -6px;
-    font-weight: 600;
-    color: #fff;
-    text-transform: uppercase;
-    padding: 0.65em 1em;
-    background: #00A789;
-    border-radius: 0.75em;
-    -webkit-transform-style: preserve-3d;
-    transform-style: preserve-3d;
-    -webkit-transition: background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), background 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-a.signup::before {
-    position: absolute;
-    content: '';
-    width: 100%;
-    height: 100%;
-    top: -0.3rem;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: #008b72;
-    border-radius: inherit;
-    -webkit-box-shadow: 0 0 0 2px #00A789, 0 0.625em 0 0 #00A789;
-    box-shadow: 0 0 0 2px #00A789, 0 0.625em 0 0 #ffffff00;
-    -webkit-transform: translate3d(0, 0.75em, -1em);
-    transform: translate3d(0, 0.75em, -1em);
-    transition: transform 150ms cubic-bezier(0, 0, 0.58, 1), box-shadow 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-transform 150ms cubic-bezier(0, 0, 0.58, 1), -webkit-box-shadow 150ms cubic-bezier(0, 0, 0.58, 1);
-}
-
-a.signup:hover {
-    background: #00A789;
-    -webkit-transform: translate(0, 0.25em);
-    transform: translate(0, 0.25em);
-}
-
-a.signup:hover::before {
-    -webkit-box-shadow: 0 0 0 2px #00A789, 0 0.5em 0 0 #00A789;
-    box-shadow: 0 0 0 2px #00A789, 0 0.5em 0 0 #ffffff00;
-    -webkit-transform: translate3d(0, 0.5em, -1em);
-    transform: translate3d(0, 0.5em, -1em);
-}
-
-a.signup:active {
-    background: #00A789;
-    -webkit-transform: translate(0em, 0.75em);
-    transform: translate(0em, 0.75em);
-}
-
-a.signup:active::before {
-    -webkit-box-shadow: 0 0 0 2px #026855, 0 0 rgb(1, 103, 84);
-    box-shadow: 0 0 0 2px #00A789, 0 0 #ffffff00;
-    -webkit-transform: translate3d(0, 0, -1em);
-    transform: translate3d(0, 0, -1em);
 }
 
 
@@ -239,10 +149,10 @@ a.signup:active::before {
     display: flex;
     flex: 0 0 auto;
     flex-flow: column;
-    gap: 60px;
+    gap: 200px;
     height: min-content;
     overflow: hidden;
-    padding: 100px 0px;
+    padding: 60px 0px;
     position: relative;
     width: auto;
 }
@@ -250,7 +160,7 @@ a.signup:active::before {
 /* Apresentação */
 /* btn-começar */
 .btn-start {
-    width: 90%;
+    width: 150px;
     background: #00A789;
     color: white;
     font-family: 'Open Sans';
@@ -329,7 +239,7 @@ a.signup:active::before {
     color: #00A789;
 }
 
-.apresentation .container-1 .subtitle {
+.subtitle {
     font-size: 28px;
     color: #575757;
     text-align: center;
@@ -370,7 +280,10 @@ a.signup:active::before {
     flex-wrap: wrap;
 }
 
-.items-function .container-1, .container-2, .container-3, .container-4 {
+.items-function .container-1,
+.container-2,
+.container-3,
+.container-4 {
     border-radius: 19.947px;
     position: relative;
     display: flex;
@@ -381,13 +294,16 @@ a.signup:active::before {
     overflow: hidden;
 }
 
-.items-function .container-1 img, .container-2 img, .container-3 img, .container-4 img {
+.items-function .container-1 img,
+.container-2 img,
+.container-3 img,
+.container-4 img {
     width: 120px;
     position: absolute;
     right: 0;
     bottom: 0;
 }
-  
+
 
 .items-function .container-1 {
     width: 382.986px;
@@ -453,6 +369,13 @@ a.signup:active::before {
     position: absolute;
     left: 10;
     bottom: 0;
+}
+
+.artigos-destaque {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
 #artigo-destaque {
@@ -541,7 +464,9 @@ footer #logo-sections {
 }
 
 footer p {
-
+    font-size: 14px;
+    display: flex;
+    width: 100%;
     align-items: center;
     justify-content: center;
 }
@@ -805,7 +730,7 @@ article ul {
 .foto-representativa-article {
     position: relative;
     top: 0;
-     bottom: 0;
+    bottom: 0;
     left: 0;
     right: 0;
     margin: auto;
@@ -824,15 +749,16 @@ article ul {
     width: 320px;
     height: 200px;
     overflow: hidden;
+    position: relative;
 }
 
 .imagem-card img {
-    width: auto;
+    width: 100%;
     height: auto;
     min-width: 100%;
     min-height: 100%;
-    max-width: auto;
-    max-height: 100%;
+    position: absolute;
+    top: 0;
 }
 
 .conteudo-card {
@@ -853,7 +779,7 @@ article ul {
     word-wrap: break-word;
 }
 
-.conteudo-card .descricao-card{
+.conteudo-card .descricao-card {
     display: flex;
     flex-direction: column;
     gap: 20px;
@@ -864,11 +790,13 @@ article ul {
     bottom: -12px;
 }
 
-.conteudo-card .tipo-data{
+.conteudo-card .tipo-data {
     display: flex;
     justify-content: space-between;
 }
-.conteudo-card .tipo-artigo, .data-artigo {
+
+.conteudo-card .tipo-artigo,
+.data-artigo {
     width: fit-content;
     color: #00A789;
     font-size: 0.8rem;
@@ -897,7 +825,8 @@ article ul {
     justify-content: center;
 }
 
-.aumentar-letra, .diminuir-letra {
+.aumentar-letra,
+.diminuir-letra {
     border: none;
     background: inherit;
     font-size: 40px;
@@ -936,18 +865,18 @@ article ul {
     padding: 2rem 1.5rem;
     transition: box-shadow .3s ease, transform .2s ease;
     border-radius: 20px;
-   }
-   
-   .card-info {
+}
+
+.card-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     transition: transform .2s ease, opacity .2s ease;
-   }
-   
-   /*Image*/
-   .card-avatar {
+}
+
+/*Image*/
+.card-avatar {
     background: linear-gradient(to top, #026855 0%, #00A789 100%);
     width: 200px;
     height: 160px;
@@ -955,71 +884,155 @@ article ul {
     transition: transform .2s ease;
     margin-bottom: 1rem;
     overflow: hidden;
-   }
+}
 
-   .card-avatar img{
+.card-avatar img {
     width: 100%;
     height: auto;
-   }
-   
-   
-   /*Card footer*/
-   .card-social {
+}
+
+
+/*Card footer*/
+.card-social {
     transform: translateY(200%);
     display: flex;
     justify-content: space-around;
     width: 100%;
     opacity: 0;
     transition: transform .2s ease, opacity .2s ease;
-   }
-   
-   .card-social__item {
+}
+
+.card-social__item {
     list-style: none;
-   }
-   
-   .card-social__item svg {
+}
+
+.card-social__item svg {
     display: block;
     height: 18px;
     width: 18px;
     fill: #515F65;
     cursor: pointer;
-    transition: fill 0.2s ease ,transform 0.2s ease;
-   }
-   
-   /*Text*/
-   .card-title {
+    transition: fill 0.2s ease, transform 0.2s ease;
+}
+
+/*Text*/
+.card-title {
     color: #333;
     font-size: 1.5em;
     font-weight: 600;
     line-height: 2rem;
-   }
-   
-   .card-subtitle {
+}
+
+.card-subtitle {
     color: #859ba8;
     font-size: 0.8em;
-   }
-   
-   /*Hover*/
-   .card:hover {
+}
+
+/*Hover*/
+.card:hover {
     box-shadow: 0 8px 50px #23232333;
-   }
-   
-   .card:hover .card-info {
+}
+
+.card:hover .card-info {
     transform: translateY(-5%);
-   }
-   
-   .card:hover .card-social {
+}
+
+.card:hover .card-social {
     transform: translateY(100%);
     opacity: 1;
-   }
-   
-   .card-social__item svg:hover {
+}
+
+.card-social__item svg:hover {
     fill: #232323;
     transform: scale(1.1);
-   }
-   
-   .card-avatar:hover {
-    transform: scale(1.1);
-   }
+}
 
-   /* Login */
+.card-avatar:hover {
+    transform: scale(1.1);
+}
+
+.nossas-contribuicoes {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 100%;
+    max-width: 100%;
+}
+
+.nossas-contribuicoes h2 {
+    font-size: 50px;
+    color: #00A789;
+    text-align: center;
+}
+
+.nossas-contribuicoes .subtitle {
+    font-size: 25px;
+}
+
+.nossas-contribuicoes .containers h4 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+
+.nossas-contribuicoes .containers {
+    display: flex;
+    flex-flow: row nowrap;
+    padding: 0px 80px;
+    align-items: center;
+}
+
+.nossas-contribuicoes .container-1,
+.container-2 {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 20px;
+    font-size: 18px;
+    padding: 10px;
+}
+
+.nossas-contribuicoes .container-2 {
+    border-radius: 0;
+    box-shadow: #232323;
+}
+
+.grid-videos {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 10px;
+}
+
+.text-article {
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+}
+
+.agenda-2030 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.agenda-2030 h2 {
+    font-weight: 600;
+    font-size: 50px;
+    color: #00A789;
+    margin: 0px 0px 30px 0px;
+}
+
+.agenda-2030 .objetivo-3-agenda-2030 {
+    display: flex;
+    width: auto;
+    height: 300px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background: #4C9F38;
+    box-shadow: 0px 13px 20px 0px rgba(0, 0, 0, 0.25) inset, 0px -13px 20px 0px rgba(0, 0, 0, 0.25) inset;
+}
+
+.agenda-2030 img {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: auto;
+}

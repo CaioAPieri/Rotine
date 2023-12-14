@@ -19,14 +19,9 @@
             <div id="navbar-items">
                 <ul id="navbar-sections">
                     <li class="navbar-inicio" style="color: #00A789;"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-explore"><a href="explorar.html">Explore</a></li>
                     <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
-                    <li class="navbar-artigos"><a href="artigos.html">Artigos</a></li>
                 </ul>
-
-                <div id="btn-login-signup">
-                    <a href="#" class="login">Entrar</a>
-                    <a href="#" class="signup">Cadastrar</a>
-                </div>
             </div>
         </nav>
     </header>
@@ -35,14 +30,14 @@
         <div class="apresentation">
             <div class="container-1">
                 <h2 class="title">
-                    Sua <span>rotina</span> mais organizada em um clique.
+                    Sua <span>rotina</span> mais saudável e eficiente.
                 </h2>
                 <p class="subtitle">
-                    Crie rotinas. Tenha tudo que precisa para uma vida saudável em um lugar…
+                    Tenha acesso a artigos ciêntificos e indicações profissionais para melhorar a sua rotina e levar a
+                    sua melhor versão.
                 </p>
-
-                <a class="btn-start">
-                    Começar
+                <a href="explorar.html" class="btn-start">
+                    Explore
                     <div class="icon">
                         <svg height="24" width="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                             <path d="M0 0h24v24H0z" fill="none"></path>
@@ -50,61 +45,79 @@
                                 fill="currentColor"></path>
                         </svg>
                     </div>
-
                 </a>
             </div>
         </div>
 
-        <div class="funcionalidades">
-            <h2 class="title-function">Funcionalidades</h2>
-            <div class="items-function">
+        <div class="nossas-contribuicoes">
+            <h2>Nossas Contribuições</h2>
+            <p class="subtitle">Veja nossas contribuições</p>
+            <div class="containers">
                 <div class="container-1">
-                    <h4>Criação de Rotinas</h4>
-                    <p>Usando essa ferramenta a criação e o gerenciamento de rotinas ficam muito mais faceis!</p>
-                    <div class="saiba-mais">
-                        <a href="#" class="saiba-mais">Saiba mais</a>
+                    <h4>Artigos academicos</h4>
+                    <div class="slider-2x">
+                        <div class="card-artigo">
+                            <div class="imagem-card"><a href="poluicao-atmosferica.html"><img
+                                        src="./src/artigos/poluicao-atmosferica/poluicao-atmosferica-foto-representativa.jpeg"
+                                        alt=""></a></div>
+                            <div class="conteudo-card">
+                                <div class="title-card">Poluição Atmosférica e saúde de crianças</div>
+                                <div class="descricao-card">
+                                    <div class="tipo-data">
+                                        <div class="tipo-artigo">Artigo Saúde</div>
+                                        <div class="data-artigo">Dez 1, 2023</div>
+                                    </div>
+                                    <a href="poluicao-atmosferica.html" class="saiba-mais">Saiba Mais</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <img src="./src/index/🦆 icon _task list_.svg" alt="">
                 </div>
                 <div class="container-2">
-                    <h4>Exercícios</h4>
-                    <p>Aproveite de uma variedade de exercícios prontos para melhorar sua vida e longevidade!</p>
-                    <div class="saiba-mais">
-                        <a href="#" class="saiba-mais">Saiba mais</a>
+                    <h4>Entrevistas</h4>
+                    <div class="slider-2x grid-videos">
+                        <iframe width="250" height="150"
+                            src="https://www.youtube.com/embed/dM34iYlSlsU?si=ptY7HJ9ZOVen6VL2"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe width="250" height="150"
+                            src="https://www.youtube.com/embed/lq0xhLwXAc0?si=_zeLDPobq8DRwSIf"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                        <iframe width="250" height="150"
+                            src="https://www.youtube.com/embed/Y2owXVF5Rok?si=kUSdCXzh7EdmytRq"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
                     </div>
-                    <img src="./src/index/🦆 icon _muscle_.svg" alt="">
-                </div>
-                <div class="container-3">
-                    <h4>Receitas</h4>
-                    <p>Conte com receitas saudáveis e sustentáveis para melhorar sua dieta!</p>
-                    <div class="saiba-mais">
-                        <a href="#" class="saiba-mais">Saiba mais</a>
-                    </div>
-                    <img src="./src/index/🦆 icon _recipe keeper_.svg" alt="">
-                </div>
-                <div class="container-4">
-                    <h4>Artigos</h4>
-                    <p>Nossas recomendações são baseado em artigos científicos, para trazer informação confiável e de
-                        qualidade!</p>
-                    <div class="saiba-mais">
-                        <a href="#" class="saiba-mais">Saiba mais</a>
-                    </div>
-                    <img src="./src/index/🦆 icon _document-layout-left_.svg" alt="">
                 </div>
             </div>
         </div>
 
-        <div id="artigo-destaque">
-            <div id="text-article">
-                <h3>Nutricionismo e Culinária</h3>
-                <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
-                    do próprio corpo. <a href="#">Saiba Mais+</a></p>
-                <span>Destaques</span>
-                <p class="data-article">Dez 1, 2023</p>
+
+
+        <div class="artigos-destaque">
+            <h2>Veja o artigo em destaque</h2>
+            <div id="artigo-destaque">
+                <div id="text-article">
+                    <h3>Nutricionismo e Culinária</h3>
+                    <p>O artigo trás a importância da educação alimentar, não só como forma de conhecimento geral, mas, sim
+                        do próprio corpo. <a href="#">Saiba Mais+</a></p>
+                    <span>Destaques</span>
+                    <p class="data-article">Dez 1, 2023</p>
+                </div>
+                <div class="imgs-article">
+                    <img id="img-article" src="./src/index/image 3.png" alt="">
+                    <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
+                </div>
             </div>
-            <div class="imgs-article">
-                <img id="img-article" src="./src/index/image 3.png" alt="">
-                <img id="img-example" src="./src/index/Rectangle 29.png" alt="">
+        </div>
+
+        <div class="agenda-2030">
+            <h2>Você sabia que o Rotine busca cumprir um dos objetivos da agenda 2030:</h2>
+            <div class="objetivo-3-agenda-2030"><img src="./src/imagens/Imagens/agenda-2030-objetivo-3.png" alt="">
             </div>
         </div>
     </section>
@@ -113,7 +126,7 @@
         <div id="logo-sections">
             <img src="./src/logo/logoRotine.svg" alt="">
             <div id="footer-sections">
-                <a href="#">Artigos</a>
+                <a href="#">Explore</a>
                 <a href="#">Sobre nós</a>
                 <a href="#">Atualizações</a>
                 <a href="#">Entre em contato</a>
@@ -123,12 +136,8 @@
         </div>
         <select name="idioma" id="idiomas">
             <option value="pt-br">Português</option>
-            <option value="en">Inglês</option>
-            <option value="es">Espanhol</option>
-            <option value="fr">Francês</option>
         </select>
         <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
-
     </footer>
 
     <!-- Acessibilidade VLibras gov -->

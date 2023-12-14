@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore</title>
+    <link rel="shortcut icon" type="imagex/png" href="./src/logo/logo.svg">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <header>
+        <nav id="topbar">
+            <div id="logo">
+                <a href="index.html"><img src="./src/logo/logoRotine.svg"></a>
+            </div>
+
+            <div id="navbar-items">
+                <ul id="navbar-sections">
+                    <li class="navbar-inicio"><a href="index.html">Inicio</a></li>
+                    <li class="navbar-Explore" style="color: #00A789;"><a href="explorar.html">Explore</a></li>
+                    <li class="navbar-sobre-nos"><a href="sobre-nos.html">Sobre Nós</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <a href="explorar.html" class="voltar"><img src="./src/imagens/Icones/Arrow 1.svg" alt="">Voltar</a>
+
+    <div class="artigo">
+        <div class="aumentar-diminuir-letra">
+            <button class="aumentar-letra" onclick="ajustarTamanhoTexto(2)">A+</button>
+            <button class="diminuir-letra" onclick="ajustarTamanhoTexto(-2)">A-</button>
+        </div>
+        <h2>A Importância dos Avatares de Libras em Sites para a Inclusão Digital de Usuários Surdos</h2>
+        <div>
+            <img src="./src/imagens/Icones/clock-regular 1.svg"
+                alt="relógio representativo não funcional da data de postagem">
+            <p>Publicado em 1 de dezembro de 2023</p>
+        </div>
+    </div>
+
+    <article>
+        <div>
+            <div class="text-article">
+                <p>A inclusão digital é um tema cada vez mais relevante na sociedade atual, e a acessibilidade em sites é
+                    uma das principais formas de garantir que todos os usuários possam ter acesso às informações disponíveis
+                    na internet. No entanto, para os usuários surdos que utilizam a Língua Brasileira de Sinais (Libras)
+                    como primeira língua, a acessibilidade em sites pode ser um desafio.</p>
+    
+                <p>Nesse contexto, os avatares de Libras surgem como uma solução tecnológica para auxiliar na tradução de
+                    conteúdo em Português para Libras, permitindo que os usuários surdos possam ter acesso às informações
+                    disponíveis na internet de forma mais eficiente e inclusiva.</p>
+    
+                <p>Um estudo recente sobre a usabilidade dos avatares de Libras em sites, realizado por pesquisadores do
+                    Instituto Federal de Santa Catarina, analisou a interação de usuários surdos por meio do rastreador
+                    ocular. Os resultados mostraram que os avatares de Libras podem contribuir significativamente para a
+                    inclusão digital de usuários surdos em sites, desde que sejam desenvolvidos com base nas melhores
+                    práticas e diretrizes de acessibilidade adotadas internacionalmente.</p>
+    
+                <p>Além disso, o estudo apontou algumas reflexões sobre a interação e satisfação dos usuários surdos ao
+                    utilizar avatares de Libras em sites. Os usuários relataram que preferem intérpretes de Libras a
+                    avatares, mas reconhecem que os avatares podem ser uma solução útil em situações em que não há
+                    intérpretes disponíveis. Os usuários também destacaram a importância de ajustes quanto à localização do
+                    avatar, tamanho e cores, bem como a necessidade de ampliar o vocabulário no banco de dados da
+                    ferramenta.</p>
+    
+                <p>Portanto, é fundamental que os sites sejam desenvolvidos com base nas melhores práticas de acessibilidade
+                    e que os avatares de Libras sejam utilizados de forma adequada, a fim de garantir a inclusão digital de
+                    usuários surdos. A implementação de avatares de Libras em sites é uma forma de demonstrar o compromisso
+                    com a acessibilidade e a inclusão digital, permitindo que todos os usuários possam ter acesso às
+                    informações disponíveis na internet de forma igualitária e inclusiva.</p>
+            </div>
+
+            <a href="https://www.researchgate.net/profile/Gabriela-Ayres-Ferreira-Terrada-2/publication/297878905_ACCESSIBILITY_BY_THE_VISUALLY_IMPAIRED_AND_BLIND_PEOPLE_IN_UNIVERSITY_LIBRARIES_ON_THE_WEB/links/5f04c19b299bf18816083ac9/ACCESSIBILITY-BY-THE-VISUALLY-IMPAIRED-AND-BLIND-PEOPLE-IN-UNIVERSITY-LIBRARIES-ON-THE-WEB.pdf" target="_blank"><img
+                    src="./src/Explore/a-usabilidade-de-avatares-de-libras-em-sites/artigo_vlibras.png" alt="Foto da capa do documento do artigo"></a>
+    </article>
+
+    <footer>
+        <div id="logo-sections">
+            <img src="./src/logo/logo.svg" alt="" title="">
+            <div id="footer-sections">
+                <a href="#">Explore</a>
+                <a href="#">Sobre nós</a>
+                <a href="#">Atualizações</a>
+                <a href="#">Entre em contato</a>
+                <a href="#">Seja um patrocinador</a>
+                <a href="#">Instale nosso aplicativo</a>
+            </div>
+        </div>
+        <select name="idioma" id="idiomas">
+            <option value="pt-br">Português</option>
+            <option value="en">Inglês</option>
+            <option value="es">Espanhol</option>
+            <option value="fr">Francês</option>
+        </select>
+        <div id="termos">
+            <p>© 2023 Rotine, Inc. • <a href="">Privacidade</a> • <a href="">Termos</a></p>
+        </div>
+    </footer>
+    <!-- Acessibilidade VLibras gov -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
